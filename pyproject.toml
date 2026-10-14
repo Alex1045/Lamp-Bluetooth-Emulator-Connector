@@ -1,0 +1,15 @@
+[project]
+name = "bit-ble-bridge"
+version = "0.1.0"
+description = "Python BLE GATT proxy from a macOS peripheral to Android Emulator Netsim"
+requires-python = ">=3.11"
+dependencies = [
+    "bleak>=0.22",
+    "bumble[android]",
+]
+
+[project.scripts]
+bit-ble-bridge = "ble_bridge:main"
+
+[tool.setuptools]
+py-modules = ["ble_bridge"]
