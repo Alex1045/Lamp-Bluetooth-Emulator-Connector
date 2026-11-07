@@ -1,5 +1,11 @@
 # Lamp Bluetooth Emulator Connector
 
+**macOS-only Python BLE bridge for connecting BitDIY in an Android emulator to real Bit5 hardware.**
+
+The physical-device connection uses the Mac's built-in Bluetooth through Bleak/CoreBluetooth. This implementation was developed on macOS 14.7.4 with Apple Silicon; Windows and Linux are not supported or validated. Real Bit5 hardware is required—this does not simulate sensor readings or LED behavior.
+
+**New users:** follow the [clone-to-connection command guide](docs/Bit5_Command_Guide.md) for Python setup, Pixel_7 creation, BitDIY APK installation, device capture, launch commands and troubleshooting. Each user must capture their own device profile on their Mac. Device profiles, logs, the virtual environment and the BitDIY APK are not included.
+
 Python-only bridge for macOS 14.7.4. Bleak uses the Mac's built-in Bluetooth to connect to the real Bit4/Bit5. Google Bumble hosts a second, virtual BLE peripheral on Android Emulator Netsim for Android apps to discover and connect to.
 
 ## Important Boundary
